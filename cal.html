@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+  <meta charset="UTF-8">
+  <title>Kalendář pro rok 2023</title>
+  <style type="text/css">
+    /* Some generic settings */
+    .month {   
+      width: 21cm;
+      height: 29.7cm;
+      display: block;
+    }
+    @media screen {
+      .month {
+        margin: 0 auto;
+        margin-bottom: 0.5cm;
+        box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+      }
+      body { background: gray; color: black; }
+    }
+    h1 {
+      text-align: center;
+      text-transform: capitalize;
+      padding-top: 2cm;
+      font-size: 1.5cm;
+      padding-bottom: 1cm;
+      margin: 0px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 0.3cm;
+      font-style: italic;
+      font-weight: normal;
+      padding-bottom: 0.5cm;
+      padding-top: 0.5cm;
+      margin: 0px;
+    }
+    .notes { font-size: 0.7em; padding-top: 0; }
+    p { margin: 0; }
+    img { position: relative; left: 50%; transform: translate(-50%); width: auto; height: 12cm; padding-bottom: 0.5cm; }
+    table { width: 100%; padding-left: 1.75cm; padding-right: 1.75cm; padding-top: 0.5cm; }
+    td { text-align: center; font-size: 1.2em; width: 2.5cm; vertical-align: top; }
+    th { font-size: 1em; }
+    tr { height: 1.3cm; }
+    /* Printing specific */
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
+    @media print {
+      .month {
+        margin: 0;
+        box-shadow: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0;
+      }
+      body { background: white; }
+    }
+  </style>
+  <style type="text/css">
+    /* Colors */
+    .month { background: white; }
+    .Sunday { color: red; }
+    .Saturday { color: red; }
+  </style>
+  <style type="text/css">
+    /* List styles */
+    .* {  }
+  </style>
+</head>
+<body>
+<script>
+function fix_tables() {
+  var tables = document.getElementsByClassName('calendar');
+  for (var i = 0; i < tables.length; i++) {
+    tables[i].style.setProperty('margin-top', "calc(10cm - " + window.getComputedStyle(tables[i], null).getPropertyValue('height') + ")")
+  }
+}
+</script>
+<div class="month">
+<h1>January 2023</h1>
+
+<img alt='January 2023' src='01.jpg'/>
+
+<table class="calendar">
+<tr>
+  <th class='Monday'>Monday</th>
+  <th class='Tuesday'>Tuesday</th>
+  <th class='Wednesday'>Wednesday</th>
+  <th class='Thursday'>Thursday</th>
+  <th class='Friday'>Friday</th>
+  <th class='Saturday'>Saturday</th>
+  <th class='Sunday'>Sunday</th>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td class='Sunday'>
+    <p class='date'> 1</p>
+  </td>
+</tr>
+<tr>
+  <td class='Monday'>
+    <p class='date'> 2</p>
+  </td>
+  <td class='Tuesday'>
+    <p class='date'> 3</p>
+  </td>
+  <td class='Wednesday'>
+    <p class='date'> 4</p>
+  </td>
+  <td class='Thursday'>
+    <p class='date'> 5</p>
+  </td>
+  <td class='Friday'>
+    <p class='date'> 6</p>
+  </td>
+  <td class='Saturday'>
+    <p class='date'> 7</p>
+  </td>
+  <td class='Sunday'>
+    <p class='date'> 8</p>
+  </td>
+</tr>
+<tr>
+  <td class='Monday'>
+    <p class='date'> 9</p>
+  </td>
+  <td class='Tuesday'>
+    <p class='date'>10</p>
+  </td>
+  <td class='Wednesday'>
+    <p class='date'>11</p>
+  </td>
+  <td class='Thursday'>
+    <p class='date'>12</p>
+  </td>
+  <td class='Friday'>
+    <p class='date'>13</p>
+  </td>
+  <td class='Saturday'>
+    <p class='date'>14</p>
+  </td>
+  <td class='Sunday'>
+    <p class='date'>15</p>
+  </td>
+</tr>
+<tr>
+  <td class='Monday'>
+    <p class='date'>16</p>
+  </td>
+  <td class='Tuesday'>
+    <p class='date'>17</p>
+  </td>
+  <td class='Wednesday'>
+    <p class='date'>18</p>
+  </td>
+  <td class='Thursday'>
+    <p class='date'>19</p>
+  </td>
+  <td class='Friday'>
+    <p class='date'>20</p>
+  </td>
+  <td class='Saturday'>
+    <p class='date'>21</p>
+  </td>
+  <td class='Sunday'>
+    <p class='date'>22</p>
+  </td>
+</tr>
+<tr>
+  <td class='Monday'>
+    <p class='date'>23</p>
+  </td>
+  <td class='Tuesday'>
+    <p class='date'>24</p>
+  </td>
+  <td class='Wednesday'>
+    <p class='date'>25</p>
+  </td>
+  <td class='Thursday'>
+    <p class='date'>26</p>
+  </td>
+  <td class='Friday'>
+    <p class='date'>27</p>
+  </td>
+  <td class='Saturday'>
+    <p class='date'>28</p>
+  </td>
+  <td class='Sunday'>
+    <p class='date'>29</p>
+  </td>
+</tr>
+<tr>
+  <td class='Monday'>
+    <p class='date'>30</p>
+  </td>
+  <td class='Tuesday'>
+    <p class='date'>31</p>
+  </td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+</div>
+<div class="month">
+<h1>February 2023</h1>
+
+<img alt='February 2023' src='02.jpg'/>
+
+<table class="calendar">
+<tr>
+  <th class='Monday'>Monday</th>
+  <th class='Tuesday'>Tuesday</th>
+  <th class='Wednesday'>Wednesday</th>
+  <th class='Thursday'>Thursday</th>
+  <th class='Friday'>Friday</th>
+  <th class='Saturday'>Saturday</th>
+  <th class='Sunday'>Sunday</th>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+  <td class='Wednesday'>
+    <p class='date'> 1</p>
+  </td>
+  <td class='Thursday'>
+    <p class='date'> 2</p>
+  </td>
+  <td class='Friday'>
+    <p class='date'> 3</p>
+  </td>
+  <td class='Saturday'>
+    <p class='date'> 4</p>
+  </td>
+  <td class='Sunday'>
+    <p class='date'> 5</p>
